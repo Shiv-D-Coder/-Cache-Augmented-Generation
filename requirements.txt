@@ -3,6 +3,4 @@ groq
 python-dotenv
 PyPDF2
 python-docx
-docx
-extract-docx
 colorama

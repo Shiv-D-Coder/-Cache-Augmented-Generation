@@ -1,6 +1,6 @@
 # 🚀 Cache Augmented Generation (CAG) - Supercharge Your LLM! 🧠⚡️
 
-[![Streamlit App](https://img.shields.io/badge/Live%20App-Click%20Here-brightgreen)](YOUR_STREAMLIT_APP_LINK_HERE)
+[![Streamlit App](https://img.shields.io/badge/Live%20App-Click%20Here-brightgreen)](https://cacheaugmentedgeneration.streamlit.app/)
 
 This project offers two implementations of Cache Augmented Generation (CAG), designed to drastically improve the performance of Large Language Models (LLMs) by pre-caching your knowledge base! Say goodbye to slow response times and hello to lightning-fast answers! ⚡️
 
@@ -19,6 +19,63 @@ Cache Augmented Generation is a powerful technique that boosts the speed and eff
 ## 💻 `app.py`: Streamlit Web Application
 
 `app.py` provides a user-friendly web interface to harness the power of CAG!
+
+## ⚙️ Setup and Installation
+
+Follow these steps to set up and run the CAG project:
+
+1.  **Clone the repository:**
+
+    ```
+    git clone <repository_url>
+    cd <repository_name>
+    ```
+
+2.  **Create a virtual environment:**
+
+    It's highly recommended to use a virtual environment to manage the project dependencies.
+
+    ```
+    python3 -m venv venv
+    ```
+
+3.  **Activate the virtual environment:**
+
+    *   On Linux/macOS:
+
+        ```
+        source venv/bin/activate
+        ```
+
+    *   On Windows:
+
+        ```
+        venv\Scripts\activate
+        ```
+
+4.  **Install the dependencies:**
+
+    ```
+    pip install -r requirements.txt
+    ```
+
+5.  **Set up the Groq API key:**
+
+    *   Create a `.env` file in the project root directory.
+    *   Add your Groq API key to the `.env` file:
+
+        ```
+        GROQ_API_KEY=YOUR_GROQ_API_KEY
+        ```
+
+        Replace `YOUR_GROQ_API_KEY` with your actual Groq API key.
+
+   6.  **Run command:**
+
+    ```
+    streamlit run app.py
+    ```     
+
 
 Features include:
 

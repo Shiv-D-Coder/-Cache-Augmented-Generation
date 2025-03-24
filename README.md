@@ -84,7 +84,7 @@ After setting up your environment and building the Docker image, you can run you
 
    Make sure you are in the directory containing your `Dockerfile`, then run the following command to build the image:
 ```
-docker build -t shiv37/cagapp .
+docker build -t cagapp .
 ```
 
 
@@ -92,7 +92,14 @@ docker build -t shiv37/cagapp .
 
 After successfully building the image, run the container with this command:
 ```
-docker run -p 8501:8501 shiv37/cagapp
+docker run -p 8501:8501 cagapp
+```
+3. **Pull image from Dockerhub**:
+
+After successfully building the image, run the container with this command:
+```
+docker login
+docker pull shiv37/cag-app
 ```
 
 Features include:

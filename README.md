@@ -27,8 +27,8 @@ Follow these steps to set up and run the CAG project:
 1.  **Clone the repository:**
 
     ```
-    git clone <repository_url>
-    cd <repository_name>
+    git clone https://github.com/Shiv-D-Coder/Cache-Augmented-Generation-app
+    cd Cache-Augmented-Generation-app
     ```
 
 2.  **Create a virtual environment:**

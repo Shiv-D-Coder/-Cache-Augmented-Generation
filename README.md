@@ -72,9 +72,9 @@ Follow these steps to set up and run the CAG project:
 
    6.  **Run command:**
 
-    ```
-    streamlit run app.py
-    ```     
+        ```
+        streamlit run app.py
+        ```     
 
 
 Features include:

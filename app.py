@@ -1,8 +1,7 @@
 import streamlit as st
 import asyncio
 import PyPDF2
-import docx
-from extract_docx import ExtractDocx
+from docx import Document  # Correct import for python-docx
 from groq import AsyncGroq
 import json
 import time
@@ -18,18 +17,12 @@ def extract_text_from_pdf(pdf_path):
         reader = PyPDF2.PdfReader(file)
         return ''.join([page.extract_text() for page in reader.pages])
 
-# def extract_text_from_docx(docx_path):
-#     doc = docx.Document(docx_path)
-#     full_text = []
-#     for para in doc.paragraphs:
-#         full_text.append(para.text)
-#     return '\n'.join(full_text)
-
-from extract_docx import ExtractDocx
-
 def extract_text_from_docx(docx_path):
-    ed = ExtractDocx(docx_path)
-    return ed.extract_text()
+    doc = Document(docx_path)  # Use Document from python-docx
+    full_text = []
+    for para in doc.paragraphs:
+        full_text.append(para.text)
+    return '\n'.join(full_text)
 
 def load_knowledge_cache(file_path, max_length=6000):
     file_extension = file_path.split('.')[-1].lower()

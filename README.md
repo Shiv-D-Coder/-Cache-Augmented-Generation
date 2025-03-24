@@ -76,6 +76,24 @@ Follow these steps to set up and run the CAG project:
         streamlit run app.py
         ```     
 
+## 🚀 Running the Application with Docker
+
+After setting up your environment and building the Docker image, you can run your Streamlit application using Docker. Follow these steps:
+
+1. **Build the Docker Image**:
+
+   Make sure you are in the directory containing your `Dockerfile`, then run the following command to build the image:
+```
+docker build -t shiv37/cagapp .
+```
+
+
+2. **Run the Docker Container**:
+
+After successfully building the image, run the container with this command:
+```
+docker run -p 8501:8501 shiv37/cagapp
+```
 
 Features include:
 
